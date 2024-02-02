@@ -500,6 +500,15 @@
     margin: 30px 0;
   }
 
+  /* ====================insta==================== */
+  #section .insta .row h2 {
+    font-family: Public Sans, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 71px;
+    margin-bottom: 30px;
+  }
+
   /* ====================davichNews==================== */
   #section .davichNews .row h3 {
     font-family: "Noto Sans KR", sans-serif;

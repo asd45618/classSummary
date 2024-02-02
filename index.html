@@ -43,14 +43,10 @@
           /></a>
         </div>
         <div class="menu">
-          <ul
-            class="depth1"
-            onmouseenter="mouseEnterEvent()"
-            onmouseleave="mouseLeaveEvent()"
-          >
+          <ul class="depth1">
             <li>
               <a href="#">ABOUT</a>
-              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+              <ul class="depth2">
                 <li><a href="#">대표 인사말​</a></li>
                 <li><a href="#">기업소개</a></li>
                 <li><a href="#">비주얼 아이덴티티​​</a></li>
@@ -60,7 +56,7 @@
             </li>
             <li>
               <a href="#">PRODUCTS</a>
-              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+              <ul class="depth2">
                 <li><a href="#">안경테 &amp; 선글라스</a></li>
                 <li><a href="#">안경렌즈​</a></li>
                 <li><a href="#">콘택트렌즈</a></li>
@@ -69,7 +65,7 @@
             </li>
             <li>
               <a href="#">PARTNERSHIP</a>
-              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+              <ul class="depth2">
                 <li><a href="#">가맹점현황​</a></li>
                 <li><a href="#">가맹점 개설안내</a></li>
                 <li><a href="#">가맹점 개설문의​</a></li>
@@ -78,7 +74,7 @@
             </li>
             <li>
               <a href="#">EDUCATION</a>
-              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+              <ul class="depth2">
                 <li><a href="#">고객가치경영연구원​</a></li>
                 <li><a href="#">다비치 사관·공채</a></li>
                 <li><a href="#">사관·공채·코디네이터 모집</a></li>
@@ -86,7 +82,7 @@
             </li>
             <li>
               <a href="#">WHAT'S NEW</a>
-              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+              <ul class="depth2">
                 <li><a href="#">광고/홍보영상​</a></li>
                 <li><a href="#">다비치 소식</a></li>
                 <li><a href="#">이벤트</a></li>
@@ -94,7 +90,7 @@
             </li>
             <li>
               <a href="#">SUPPORT</a>
-              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+              <ul class="depth2">
                 <li><a href="#">고객의 소리​</a></li>
                 <li><a href="#">자주하는 질문​</a></li>
                 <li><a href="#">상품권 구매</a></li>
@@ -115,11 +111,7 @@
         </div>
       </div>
     </div>
-    <div
-      id="headerNav"
-      onmouseenter="mouseEnterEvent(); depth2MouseEnterEvent()"
-      onmouseleave="mouseLeaveEvent(); depth2MouseLeaveEvent()"
-    ></div>
+    <div id="headerNav"></div>
     <div id="section">
       <div class="slideOuter">
         <div class="slideInner">
@@ -537,25 +529,31 @@
         }
       });
 
-      function mouseEnterEvent() {
-        let headerNav = document.querySelector("#headerNav");
-        headerNav.style.display = "block";
-      }
+      let headerNav = document.querySelector("#headerNav");
+      let depth2 = document.querySelectorAll(".depth2");
+      console.log(depth2);
 
-      function mouseLeaveEvent() {
-        let headerNav = document.querySelector("#headerNav");
-        headerNav.style.display = "none";
-      }
+      // function mouseEnterEvent() {
+      //   headerNav.style.display = "block";
+      // }
 
-      function depth2MouseEnterEvent() {
-        let depth2 = document.querySelector(".depth2");
-        depth2.style.display = "flex";
-      }
+      // function mouseLeaveEvent() {
+      //   headerNav.style.display = "none";
+      // }
 
-      function depth2MouseLeaveEvent() {
-        let depth2 = document.querySelector(".depth2");
-        depth2.style.display = "none";
-      }
+      // function depth2MouseEnterEvent() {
+      //   depth2.forEach((value) => {
+      //     value.style.display = "flex";
+      //     value.style.width = "100%";
+      //   });
+      // }
+
+      // function depth2MouseLeaveEvent() {
+      //   // depth2.forEach((value) => {
+      //   //   value.style.display = "none";
+      //   // });
+      //   depth2.style.display = "none";
+      // }
     </script>
   </body>
 </html>
