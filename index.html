@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAVICH</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/rwdIndex.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="row">
+        <div class="logo">
+          <a href="#"
+            ><img src="./images/logo-all1.png" alt="일시적 이미지 로딩 오류"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul
+            class="depth1"
+            onmouseenter="mouseEnterEvent()"
+            onmouseleave="mouseLeaveEvent()"
+          >
+            <li>
+              <a href="#">ABOUT</a>
+              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+                <li><a href="#">대표 인사말​</a></li>
+                <li><a href="#">기업소개</a></li>
+                <li><a href="#">비주얼 아이덴티티​​</a></li>
+                <li><a href="#">사회공헌​</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PRODUCTS</a>
+              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+                <li><a href="#">안경테 &amp; 선글라스</a></li>
+                <li><a href="#">안경렌즈​</a></li>
+                <li><a href="#">콘택트렌즈</a></li>
+                <li><a href="#">보청기​</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">PARTNERSHIP</a>
+              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+                <li><a href="#">가맹점현황​</a></li>
+                <li><a href="#">가맹점 개설안내</a></li>
+                <li><a href="#">가맹점 개설문의​</a></li>
+                <li><a href="#">제휴문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">EDUCATION</a>
+              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+                <li><a href="#">고객가치경영연구원​</a></li>
+                <li><a href="#">다비치 사관·공채</a></li>
+                <li><a href="#">사관·공채·코디네이터 모집</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">WHAT'S NEW</a>
+              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+                <li><a href="#">광고/홍보영상​</a></li>
+                <li><a href="#">다비치 소식</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">SUPPORT</a>
+              <ul class="depth2" onmouseenter="mouseEnterEvent()">
+                <li><a href="#">고객의 소리​</a></li>
+                <li><a href="#">자주하는 질문​</a></li>
+                <li><a href="#">상품권 구매</a></li>
+                <li><a href="#">매장찾기​</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="goToBtn">
+          <div class="menuOpen">
+            <span class="blind">메뉴열기</span>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <a class="findMarket" href="#">매장찾기</a>
+          <a class="davichMarket" href="#"
+            >다비치 마켓 <i class="fa-solid fa-square-arrow-up-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div
+      id="headerNav"
+      onmouseenter="mouseEnterEvent(); depth2MouseEnterEvent()"
+      onmouseleave="mouseLeaveEvent(); depth2MouseLeaveEvent()"
+    ></div>
+    <div id="section">
+      <div class="slideOuter">
+        <div class="slideInner">
+          <div class="slide">
+            <video src="./images/slide1.mp4" autoplay muted loop></video>
+            <div class="row">
+              <h2 class="h2Text">신뢰할 수 있는 Healthcare브랜드</h2>
+              <p class="subText">당신과 함께하는 우리는 다비치입니다.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <video src="./images/slide2.mp4" autoplay muted loop></video>
+            <div class="row">
+              <h2 class="h2Text">No.1 DAVICH Optical</h2>
+              <p class="subText">빛이 되어 드리겠습니다.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <video src="./images/slide3.mp4" autoplay muted loop></video>
+            <div class="row">
+              <h2 class="h2Text">안경체인 No.1</h2>
+              <p class="subText">전문성과 신뢰를 바탕으로 상품과 서비스 창출</p>
+            </div>
+          </div>
+          <div class="slide">
+            <video src="./images/slide4.mp4" autoplay muted></video>
+            <div class="row">
+              <h2 class="h2Text">World Best DAVICH</h2>
+              <p class="subText">맑고 밝은 세상, 인류를 행복하게</p>
+            </div>
+          </div>
+        </div>
+        <div class="plapau">
+          <i class="fa-solid fa-pause"></i>
+        </div>
+      </div>
+      <div class="davichInfo">
+        <div class="row">
+          <div class="info">
+            <div class="infoNum">
+              <h2>292</h2>
+              <span>개</span>
+            </div>
+            <p>다비치 안경체인의<br />가맹점 수</p>
+          </div>
+          <div class="info">
+            <div class="infoNum">
+              <h2>1,512</h2>
+              <span>명</span>
+            </div>
+            <p>다비치가 배출한<br />사관·공채 졸업생</p>
+          </div>
+          <div class="info">
+            <div class="infoNum">
+              <h2>42,757</h2>
+              <span>개</span>
+            </div>
+            <p>다비치 눈건강시력<br />지킴이 안경기부</p>
+          </div>
+          <div class="info">
+            <div class="infoNum">
+              <h2>1,200만</h2>
+              <span></span>
+            </div>
+            <p>다비치와 함께한<br />고객 수</p>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <a href="#">
+          <div class="productImgP">
+            <img src="./images/img-product-gl.png" alt="이미지 로딩 오류" />
+            <p>안경테 &amp; 선글라스</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="productImgP">
+            <img src="./images/img-product-lens.png" alt="이미지 로딩 오류" />
+            <p>안경렌즈</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="productImgP">
+            <img
+              src="./images/img-product-contact.png"
+              alt="이미지 로딩 오류"
+            />
+            <p>콘택트렌즈</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="productImgP">
+            <img src="./images/img-product-bo.png" alt="이미지 로딩 오류" />
+            <p>보청기</p>
+          </div>
+        </a>
+      </div>
+      <div class="volunteer">
+        <div class="rowImg">
+          <img
+            src="./images/img-main-fullbanner-01.png"
+            alt="이미지 로딩 오류"
+          />
+          <div class="row">
+            <h2>눈건강<br />시력 지킴이</h2>
+            <p>
+              눈건강 시력 지킴이는 소외된 어려운 이웃까지 맑고 밝게 비춰주는<br />
+              봉사단으로 전국 사회봉사시설을 방문해 시력검사 및 돋보기, 교정용
+              안경을 무료로 제공합니다. <br />
+              다비치는 모두가 함께하는 더 나은 사회를 만들기 위해
+              기여하겠습니다.
+            </p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="lab">
+        <div class="labRowImg">
+          <img
+            src="./images/img-main-fullbanner-02.png"
+            alt="이미지 로딩 오류"
+          />
+          <div class="row">
+            <h2>고객가치<br />경영연구원</h2>
+            <p>
+              안경업계 최초 서울지방노동청에서 자체<br />
+              훈련기관으로 승인 받은 안경사 전문 교육기관입니다.<br />
+              다비치 고객가치경영연구원에서 여러분의 꿈을 이루세요.
+            </p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="aboutDavich">
+        <div class="row">
+          <div>
+            <a class="aboutDavichOuter">
+              <div class="aboutDavichInner">
+                <div class="aboutDavichImg">
+                  <div class="cssImg"></div>
+                </div>
+                <h2>매장찾기</h2>
+              </div>
+            </a>
+            <a class="aboutDavichOuter">
+              <div class="aboutDavichInner">
+                <div class="aboutDavichImg">
+                  <div class="cssImg"></div>
+                </div>
+                <h2>경영이념</h2>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a class="aboutDavichOuter">
+              <div class="aboutDavichInner">
+                <div class="aboutDavichImg">
+                  <div class="cssImg"></div>
+                </div>
+                <h2>고객의 소리</h2>
+              </div>
+            </a>
+            <a class="aboutDavichOuter aboutDavichOuterLast">
+              <div class="aboutDavichInner">
+                <div class="aboutDavichImg">
+                  <div class="cssImg"></div>
+                </div>
+                <h2>상품권 구매</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="insta">
+        <div class="row">
+          <h2>instagram</h2>
+          <div class="imgBoxOuter">
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/375285037_219142981138117_8859474748020435164_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/377746033_1230024654528450_567086201504455630_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/377543020_270424389200217_2552900628199488239_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/378026016_1794293224374867_7660590533050610991_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/378432115_1388552655069557_8135913010461329720_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/368465409_1479069876223662_4648356033616188344_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/367375728_1341015816765464_1521793689056176958_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+            <div class="imgBoxInner">
+              <a href="#">
+                <img
+                  src="./images/366134780_6658000504243427_6558596679362979412_n.jpg"
+                  alt="이미지 로딩 오류"
+                  class="instaPhoto"
+                />
+                <img
+                  src="./images/icon-instagram-carousel.png"
+                  alt="이미지 로딩 오류"
+                  class="more"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="davichNews">
+        <div class="row">
+          <div class="davichNewsOuterLeft">
+            <h3>다비치 소식</h3>
+            <div class="davichNewsWrapper">
+              <a href="#"
+                >다비치안경, '제24회 한국프랜차이즈산업발전유공' 대통령 표창
+                수상 영예</a
+              >
+              <a href="#"
+                >다비치안경, 품질 혁신 위해 물류센터 장기 재고와 불량 안경테
+                폐기</a
+              >
+              <a href="#"
+                >다비치 '2023 라스트 찬스' 블루라이트차단렌즈 최저가 도전 캠페인
+                진행</a
+              >
+            </div>
+            <a href="#" class="plusLeft">
+              <i class="fa-solid fa-plus"></i>
+            </a>
+          </div>
+          <div class="davichNewsOuterRight">
+            <h3>신규 오픈 매장</h3>
+            <div>
+              <a href="#" class="storeSlide"
+                ><img
+                  src="./images/img-grand-open.png"
+                  alt="이미지 로딩 오류"
+                />
+                <div class="imgText">
+                  <h4>상주점</h4>
+                  <p>10월 14일</p>
+                </div></a
+              >
+            </div>
+            <a href="#" class="plusRight">
+              <i class="fa-solid fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="row">
+        <div class="footerTop">
+          <div class="footerTopText">
+            <a href="#" class="topText">개인정보처리방침 </a>
+            <a href="#" class="topText">이메일주소 무단수집거부</a>
+            <a href="#" class="topText">자주하는 질문</a>
+            <a href="#" class="topText">오시는 길</a>
+            <a href="#" class="topText">원격지원</a>
+          </div>
+          <div class="footerTopSns">
+            <a href="#" class="snsLogo">
+              <i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="snsLogo">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="snsLogo">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div class="footerBottomTitle">
+            <h2>(주)다비치안경체인</h2>
+          </div>
+          <div class="footerBottomText">
+            <div class="rightText">
+              <p>
+                <span>대표이사: 김인규, 김봉건</span>
+                <span>주소: 서울시 중구 소공로 62, 3층(충무로1가)</span>
+              </p>
+              <p>
+                <span>사업자 등록번호: 764-81-01136</span>
+                <span>의료기기 판매업 신고번호: 제 3192호</span>
+                <span>의료기기 광고 사전심의번호: 2016GN1350095</span>
+              </p>
+              <p>
+                <span>대표번호: 1668-1407</span>
+                <span>연말정산 문의: 070-7432-0957</span>
+                <span>Fax: 02-752-6176</span>
+              </p>
+              <small>COPYRIGHT© DAVICH OPTICAL. ALL RIGHTS RESERVED.</small>
+            </div>
+            <div class="familySite">
+              <div class="familySiteWrapper">
+                <a href="#">Family Site</a>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(".slideInner").slick({
+        autoplaySpeed: 4000,
+        // speed: 300,
+        autoplay: true,
+        dots: true,
+        arrows: true,
+        prevArrow:
+          '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa-solid fa-chevron-left"></i></button><p class="prev">Prev</p>',
+        nextArrow:
+          '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button><p class="next">Next</p>',
+      });
+
+      $(".slideOuter .plapau i").on("click", function () {
+        if ($(this).hasClass("fa-pause")) {
+          $(".slideInner").slick("slickPause");
+          $(".slideOuter .plapau i")
+            .removeClass("fa-pause")
+            .addClass("fa-play");
+        } else {
+          $(".slideInner").slick("slickPlay");
+          $(".slideOuter .plapau i")
+            .removeClass("fa-play")
+            .addClass("fa-pause");
+        }
+      });
+
+      function mouseEnterEvent() {
+        let headerNav = document.querySelector("#headerNav");
+        headerNav.style.display = "block";
+      }
+
+      function mouseLeaveEvent() {
+        let headerNav = document.querySelector("#headerNav");
+        headerNav.style.display = "none";
+      }
+
+      function depth2MouseEnterEvent() {
+        let depth2 = document.querySelector(".depth2");
+        depth2.style.display = "flex";
+      }
+
+      function depth2MouseLeaveEvent() {
+        let depth2 = document.querySelector(".depth2");
+        depth2.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

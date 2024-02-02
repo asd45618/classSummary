@@ -1,0 +1,890 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.blind {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.row {
+  max-width: 1400px;
+  border: 0px solid #fff;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+video {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ====================header==================== */
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid #ccc;
+}
+
+#headerNav {
+  position: fixed;
+  width: 100%;
+  height: 162px;
+  z-index: 998;
+  background: white;
+  display: none;
+}
+
+#header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .row .menu .depth1 {
+  display: flex;
+  position: relative;
+}
+
+#header .row .menu .depth1 > li > a {
+  display: block;
+  padding: 28px 20px;
+  font-family: Public Sans, sans-serif;
+  font-weight: 500;
+  color: #222;
+  font-size: 17px;
+  line-height: 22px;
+  cursor: pointer;
+  position: relative;
+}
+
+#header .row .menu .depth1 > li {
+  border-bottom: 2px solid transparent;
+}
+
+#header .row .menu .depth1 > li:hover {
+  border-color: #0056aa;
+}
+
+#header .row .menu .depth1 a:hover {
+  color: #0056aa;
+}
+
+#header .row .menu .depth1 .depth2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: none;
+  border-top: 1px solid #ccc;
+}
+
+#header .row .depth1 > li:hover .depth2 {
+  display: flex;
+  width: 100%;
+}
+
+#header .row .depth2 > li > a {
+  display: block;
+  padding: 28px 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #222;
+}
+
+#header .row .menuOpen {
+  display: none;
+}
+
+#header .row .goToBtn {
+  display: flex;
+}
+
+#header .row .goToBtn > a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 50px;
+  color: #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+#header .row .goToBtn .findMarket {
+  background: #222;
+  margin: 0 10px 0 0;
+}
+
+#header .row .goToBtn .davichMarket {
+  background: #0056aa;
+}
+
+#header .row .goToBtn .davichMarket > i {
+  font-size: 16px;
+}
+
+/* ====================section==================== */
+
+/* ========slideOuter======== */
+
+#section .slideOuter {
+  height: 100vh;
+}
+
+#section .slideOuter .slideInner .slide {
+  position: relative;
+}
+
+#section .slideOuter .slideInner .slide .row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+#section .slideOuter .slideInner .slide .row h2 {
+  font-size: 70px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  line-height: 103px;
+  letter-spacing: -2.1px;
+}
+
+#section .slideOuter .slideInner .slide .row p {
+  font-size: 25px;
+  opacity: 0.8;
+  font-weight: 300;
+  line-height: 37px;
+  margin-left: 4px;
+  z-index: 99999;
+}
+
+#section .slideOuter .slideInner button.slick-arrow {
+  border: none;
+  background: none;
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+#section .slideOuter .slideInner button.slick-next {
+  width: 67px;
+  height: 67px;
+  right: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+#section .slideOuter .slideInner p.next {
+  position: absolute;
+  top: 58%;
+  right: 65px;
+  font-family: Public Sans, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+#section .slideOuter .slideInner button.slick-prev {
+  width: 67px;
+  height: 67px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  left: 50px;
+  z-index: 999;
+  font-size: 18px;
+}
+
+#section .slideOuter .slideInner p.prev {
+  position: absolute;
+  top: 58%;
+  left: 65px;
+  font-family: Public Sans, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  z-index: 999;
+}
+
+#section .slideOuter .slideInner ul.slick-dots {
+  position: absolute;
+  left: 20%;
+  transform: translate(-50%);
+  bottom: 30%;
+  margin: 0 auto;
+}
+
+#section .slideOuter .slideInner ul.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#section .slideOuter .slideInner ul.slick-dots li button {
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  /* text-indent: 100px; */
+  /* overflow: hidden; */
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease-in;
+  font-family: Public Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 30px;
+}
+
+#section .slideOuter .slideInner ul.slick-dots li.slick-active > button {
+  /* background: #f00; */
+  /* width: 50px; */
+  color: #0056aa;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+/* 슬라이더 자동재생 멈춤 버튼 */
+#section .slideOuter {
+  position: relative;
+}
+
+#section .slideOuter .plapau {
+  position: absolute;
+  bottom: 29.5%;
+  left: 24%;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 60px;
+}
+
+/* ====================davichInfo==================== */
+
+#section .davichInfo {
+  height: 540px;
+  background: #0056aa;
+}
+
+#section .davichInfo .row {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#section .davichInfo .row .info .infoNum {
+  display: flex;
+}
+
+#section .davichInfo .row .info .infoNum > h2 {
+  font-family: Public Sans, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  color: #fff;
+}
+
+#section .davichInfo .row .info .infoNum > span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  padding: 33px 0 0 8px;
+}
+
+#section .davichInfo .row .info > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  margin: 20px 0 0;
+}
+
+/* ====================product==================== */
+
+#section .product {
+  display: flex;
+}
+
+#section .product .productImgP {
+  position: relative;
+  overflow: hidden;
+}
+
+#section .product .productImgP img {
+  transition: all 0.3s;
+}
+
+#section .product a:hover img {
+  transform: scale(1.1);
+}
+
+#section .product p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #0056aa;
+  border: 1px solid #0056aa;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#section .product a:hover p {
+  color: #fff;
+  background: #0056aa;
+}
+
+/* ====================volunteer==================== */
+
+#section .volunteer .rowImg {
+  position: relative;
+  overflow: hidden;
+}
+
+#section .volunteer .rowImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s;
+}
+
+#section .volunteer .rowImg:hover img {
+  transform: scale(1.1);
+}
+
+#section .volunteer .row {
+  position: absolute;
+  width: 1400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#section .volunteer .row h2 {
+  font-size: 50px;
+  font-weight: 700px;
+  line-height: 70px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+#section .volunteer .row p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 90px;
+}
+
+#section .volunteer .row a {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #222;
+  color: #222;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#section .volunteer .rowImg:hover a {
+  visibility: visible;
+  opacity: 1;
+}
+
+#section .volunteer .rowImg a:hover {
+  background: #0056aa;
+  border: 1px solid #0056aa;
+  color: #fff;
+}
+
+/* ====================lab==================== */
+#section .lab .labRowImg {
+  position: relative;
+  overflow: hidden;
+}
+
+#section .lab .labRowImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s;
+}
+
+#section .lab .labRowImg:hover img {
+  transform: scale(1.1);
+}
+
+#section .lab .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  position: absolute;
+  width: 1400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#section .lab .row h2 {
+  font-size: 50px;
+  font-weight: 700px;
+  line-height: 70px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+#section .lab .row p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 90px;
+}
+
+#section .lab .row a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #222;
+  color: #222;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#section .lab .labRowImg:hover a {
+  visibility: visible;
+  opacity: 1;
+}
+
+#section .lab .labRowImg a:hover {
+  background: #0056aa;
+  border: 1px solid #0056aa;
+  color: #fff;
+}
+
+/* ====================aboutDavich==================== */
+
+#section .aboutDavich {
+  height: 500px;
+  background: #0056aa;
+}
+
+#section .aboutDavich .row {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section .aboutDavich .row > div {
+  display: flex;
+}
+
+#section .aboutDavich .row .aboutDavichOuter {
+  display: block;
+  position: relative;
+  width: 288px;
+  height: 288px;
+  margin-right: 72px;
+  border-radius: 50%;
+  background: #0056aa;
+  transition: 0.6s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#section .aboutDavich .row .aboutDavichOuter:hover {
+  background: #fff;
+}
+
+#section .aboutDavich .row .aboutDavichOuterLast {
+  margin-right: 0;
+}
+
+#section .aboutDavich .row .aboutDavichInner {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 57px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#section .aboutDavich .row .aboutDavichInner .aboutDavichImg {
+  width: 160px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #section .aboutDavich .row .aboutDavichOuter .aboutDavichImg img {
+  width: 100%;
+  height: 100%;
+  margin-left: 25%;
+  object-fit: cover;
+} */
+
+#section .aboutDavich .row .aboutDavichOuter .aboutDavichImg .cssImg {
+  width: 130px;
+  height: 130px;
+  background-position: -13px 0;
+}
+
+#section
+  .aboutDavich
+  .row
+  div:nth-child(1)
+  .aboutDavichOuter:nth-child(1)
+  .aboutDavichImg
+  .cssImg {
+  background-image: url(../images/icon-quick-01.png);
+}
+
+#section
+  .aboutDavich
+  .row
+  div:nth-child(1)
+  .aboutDavichOuter:nth-child(2)
+  .aboutDavichImg
+  .cssImg {
+  background-image: url(../images/icon-quick-02.png);
+}
+
+#section
+  .aboutDavich
+  .row
+  div:nth-child(2)
+  .aboutDavichOuter:nth-child(1)
+  .aboutDavichImg
+  .cssImg {
+  background-image: url(../images/icon-quick-03.png);
+}
+
+#section
+  .aboutDavich
+  .row
+  div:nth-child(2)
+  .aboutDavichOuter:nth-child(2)
+  .aboutDavichImg
+  .cssImg {
+  background-image: url(../images/icon-quick-04.png);
+}
+
+#section .aboutDavich .row .aboutDavichOuter:hover .aboutDavichImg .cssImg {
+  /* transition: 0.6s; */
+  background-position: -175px 0;
+}
+
+#section .aboutDavich .row .aboutDavichOuter .aboutDavichInner h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#section .aboutDavich .row .aboutDavichOuter:hover .aboutDavichInner h2 {
+  color: #0056aa;
+}
+
+/* ====================insta==================== */
+
+#section .insta .row {
+  padding-top: 40px;
+}
+
+#section .insta .row h2 {
+  font-family: Public Sans, sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 71px;
+  margin-bottom: 30px;
+}
+
+#section .insta .row .imgBoxOuter {
+  display: flex;
+  /* flex: 0 0 25%; */
+  flex-wrap: wrap;
+}
+
+#section .insta .row .imgBoxInner {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 40px 40px 0;
+}
+
+#section .insta .row .imgBoxInner:nth-child(4) {
+  margin-right: 0;
+}
+
+#section .insta .row .imgBoxInner:nth-child(8) {
+  margin-right: 0;
+}
+
+#section .insta .row .imgBoxInner > a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#section .insta .row .imgBoxInner > a .instaPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+#section .insta .row .imgBoxInner > a:hover .instaPhoto {
+  transform: scale(1.2);
+}
+
+#section .insta .row .imgBoxInner > a .more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* ====================davichNews==================== */
+
+#section .davichNews .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+#section .davichNews .row h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+#section .davichNews .row .davichNewsOuterLeft {
+  position: relative;
+  min-width: 680px;
+}
+
+#section .davichNews .row .davichNewsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#section .davichNews .row .davichNewsWrapper a {
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  line-height: 80px;
+  border-top: 1px solid #edeff5;
+}
+
+#section .davichNews .row .davichNewsWrapper a:nth-child(3) {
+  border-bottom: 1px solid #edeff5;
+}
+
+#section .davichNews .row .plusLeft {
+  position: absolute;
+  top: 4%;
+  right: 0;
+  border: 1px solid #222;
+}
+
+#section .davichNews .row .plusLeft i {
+  font-size: 25px;
+  padding: 8px;
+  color: gray;
+}
+
+#section .davichNews .row .davichNewsOuterRight {
+  position: relative;
+  min-width: 680px;
+}
+
+#section .davichNews .row .davichNewsOuterRight .storeSlide {
+  display: inline-block;
+  height: 100%;
+}
+
+#section .davichNews .row .davichNewsOuterRight .storeSlide {
+  position: relative;
+}
+
+#section .davichNews .row .davichNewsOuterRight .storeSlide .imgText {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#section .davichNews .row .davichNewsOuterRight .storeSlide .imgText h4 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+#section .davichNews .row .davichNewsOuterRight .storeSlide .imgText p {
+  font-size: 22px;
+}
+
+#section .davichNews .row .plusRight {
+  position: absolute;
+  top: 6%;
+  right: 0;
+  border: 1px solid #222;
+}
+
+#section .davichNews .row .plusRight i {
+  font-size: 25px;
+  padding: 8px;
+  color: gray;
+}
+
+/* ====================footer==================== */
+#footer {
+  margin: auto;
+  padding: 70px 0;
+  background: #f9f9f9;
+}
+
+#footer .row {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .row .footerTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .row .footerTop .footerTopText a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+  margin-right: 38px;
+}
+
+#footer .row .footerTop .footerTopSns .snsLogo {
+  font-size: 23px;
+  margin-right: 28px;
+}
+
+#footer .row .footerBottom {
+  margin-top: 60px;
+}
+
+#footer .row .footerBottom .footerBottomTitle h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #222;
+}
+
+#footer .row .footerBottom .footerBottomText {
+  position: relative;
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #555;
+  margin: 32px 0 0 0;
+}
+
+#footer .row .footerBottom .footerBottomText p:nth-child(3) {
+  margin-bottom: 32px;
+}
+
+#footer .row .footerBottom .footerBottomText .rightText span {
+  margin: 0 10px;
+}
+
+#footer .row .footerBottom .footerBottomText small {
+  color: #888;
+}
+
+#footer .row .footerBottom .footerBottomText .familySite {
+  position: absolute;
+  width: 250px;
+  top: 0;
+  right: 0;
+  border: 1px solid #dedede;
+  padding: 12px 20px;
+}
+
+#footer .row .footerBottom .footerBottomText .familySite .familySiteWrapper {
+  position: relative;
+  width: 100%;
+}
+
+#footer .row .footerBottom .footerBottomText .familySite a {
+  display: block;
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  /* font-weight: 400; */
+  font-size: 16px;
+}
+
+#footer .row .footerBottom .footerBottomText .familySite i {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}

@@ -1,0 +1,577 @@
+@media screen and (max-width: 1750px) {
+  /* slide 안에 있는 text 가운데로 옮기기 */
+  #section .slideOuter .slideInner .slide .row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  #section .slideOuter .slideInner ul.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 100px;
+    margin: 0 auto;
+  }
+
+  #section .slideOuter .plapau {
+    position: absolute;
+    bottom: 95px;
+    left: 55%;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* ================================header================================ */
+  #header {
+    position: static;
+    width: 100%;
+    z-index: 999;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #ccc;
+  }
+
+  #header .row {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  #header .row .logo {
+    padding: 13px 0;
+  }
+
+  #header .row .menu {
+    display: block;
+  }
+
+  #header .row .menu .depth1 {
+    display: none;
+  }
+
+  #header .row .menuOpen {
+    display: block;
+    padding-right: 10px;
+    margin-top: 1.5%;
+  }
+
+  #header .row .goToBtn {
+    position: absolute;
+    top: 21px;
+    right: 1%;
+  }
+
+  #header .row .menu .depth1 > li:hover {
+    border-color: #fff;
+  }
+
+  #header .row .menu .depth1 > li:hover > a {
+    border-color: #0056aa;
+  }
+
+  #header .row .menu .depth1 > li > a {
+    display: block;
+    padding: 28px 20px;
+    font-family: Public Sans, sans-serif;
+    font-weight: 500;
+    color: #222;
+    font-size: 17px;
+    line-height: 22px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid transparent;
+  }
+
+  #header .row .menu .depth1 .depth2 {
+    position: static;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: block;
+    padding: 0 30px;
+  }
+
+  #header .row .depth1 > li:hover .depth2 {
+    display: block;
+    width: 100%;
+  }
+
+  #header .row .depth2 > li > a {
+    display: block;
+    padding: 28px 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #222;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  /* ================================section================================ */
+  /* ====================davichInfo==================== */
+  #section .davichInfo .row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #section .davichInfo .row .info {
+    flex: 1 1 50%;
+  }
+
+  #section .davichInfo .row .info .infoNum {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ====================product==================== */
+  #section .product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #section .product > a {
+    display: flex;
+    width: 50%;
+  }
+
+  #section .product .productImgP {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #section .product .productImgP img {
+    width: 100%;
+    /* height: 100vw; */
+    transition: all 0.3s;
+  }
+
+  #section .product a:hover img {
+    transform: scale(1.1);
+  }
+
+  /* ====================volunteer==================== */
+  #section .volunteer .row {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+  }
+
+  /* ====================lab==================== */
+  #section .lab .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 1400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  #section .lab .row a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /* ====================aboutDavich==================== */
+  #section .aboutDavich {
+    height: auto;
+    background: #0056aa;
+  }
+
+  #section .aboutDavich .row {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #section .aboutDavich .row .aboutDavichOuter {
+    display: block;
+    position: relative;
+    width: 288px;
+    height: 288px;
+    margin-right: 0;
+    margin: 20px 10px;
+    border-radius: 50%;
+    background: #0056aa;
+    transition: 0.6s;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  /* ====================insta==================== */
+  #section .insta .row {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  #section .insta .row .imgBoxOuter {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #section .insta .row .imgBoxInner {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 40%;
+    margin: 0 10px 40px 0;
+    /* flex: 0 1 35%; */
+  }
+
+  /* ====================davichNews==================== */
+  #section .davichNews .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+  }
+
+  #section .davichNews .row .davichNewsOuterLeft {
+    position: relative;
+    width: 80%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  /* ====================slide==================== */
+  #section .slideOuter .slideInner ul.slick-dots li button {
+    font-size: 14px;
+  }
+
+  #section .slideOuter .slideInner .slide .row h2 {
+    font-size: 50px;
+    margin-bottom: 7px;
+    font-weight: 700;
+    line-height: 103px;
+    letter-spacing: -2.1px;
+  }
+
+  #section .slideOuter .slideInner .slide .row p {
+    font-size: 15px;
+    opacity: 0.8;
+    font-weight: 300;
+    line-height: 37px;
+    margin-left: 4px;
+    z-index: 99999;
+  }
+
+  #section .slideOuter .slideInner button.slick-arrow {
+    top: 46%;
+  }
+
+  #section .slideOuter .slideInner button.slick-next {
+    width: 47px;
+    height: 47px;
+    font-size: 12px;
+  }
+
+  #section .slideOuter .slideInner button.slick-prev {
+    width: 47px;
+    height: 47px;
+    font-size: 12px;
+  }
+
+  #section .slideOuter .slideInner p.next {
+    top: 52%;
+    right: 59px;
+    font-size: 12px;
+  }
+
+  #section .slideOuter .slideInner p.prev {
+    top: 52%;
+    left: 59px;
+    font-size: 12px;
+  }
+
+  /* ====================volunteer==================== */
+  #section .volunteer .row h2 {
+    font-size: 30px;
+    font-weight: 700px;
+    line-height: 40px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  #section .volunteer .row p {
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  #section .volunteer .row a {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #222;
+    color: #222;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /* ====================lab==================== */
+  #section .lab .row h2 {
+    font-size: 30px;
+    font-weight: 700px;
+    line-height: 40px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  #section .lab .row p {
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  #section .lab .row a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #222;
+    color: #222;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /* ====================footer==================== */
+  #footer .row .footerTop {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  #footer .row .footerTop .footerTopText {
+    margin-bottom: 30px;
+  }
+
+  #footer .row .footerBottom .footerBottomTitle h2 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #222;
+    text-align: center;
+  }
+
+  #footer .row .footerBottom .footerBottomText {
+    position: relative;
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #555;
+    margin: 32px 0 0 0;
+    text-align: center;
+  }
+
+  #footer .row .footerBottom .footerBottomText .familySite {
+    position: static;
+    width: 250px;
+    top: 0;
+    right: 0;
+    border: 1px solid #dedede;
+    padding: 12px 20px;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  /* ====================footer==================== */
+  #footer {
+    margin: auto;
+    padding: 30px 0;
+    background: #f9f9f9;
+  }
+
+  #footer .row .footerTop .footerTopText a {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+
+  #footer .row .footerTop .footerTopSns .snsLogo {
+    font-size: 19px;
+    margin-right: 28px;
+  }
+
+  #footer .row .footerTop .footerTopSns .snsLogo:nth-child(3) {
+    font-size: 23px;
+    margin-right: 0;
+  }
+
+  #footer .row .footerBottom .footerBottomTitle h2 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #222;
+  }
+
+  #footer .row .footerBottom .footerBottomText .rightText span {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  #footer .row .footerBottom .footerBottomText small {
+    color: #888;
+    font-size: 10px;
+  }
+
+  #footer .row .footerBottom .footerBottomText .familySite {
+    position: static;
+    width: 150px;
+    top: 0;
+    right: 0;
+    border: 1px solid #dedede;
+    padding: 6px 10px;
+    margin: 30px auto;
+  }
+
+  #footer .row .footerBottom .footerBottomText .familySite a {
+    display: block;
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    /* font-weight: 400; */
+    font-size: 12px;
+  }
+
+  #footer .row .footerBottom .footerBottomText .familySite i {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* ====================davichInfo==================== */
+  #section .davichInfo {
+    height: auto;
+    background: #0056aa;
+  }
+
+  #section .davichInfo .row .info {
+    flex: 1 1 100%;
+    margin: 30px 0;
+  }
+
+  /* ====================davichNews==================== */
+  #section .davichNews .row h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 70px;
+    margin-bottom: 10px;
+  }
+
+  #section .davichNews .row .davichNewsOuterLeft {
+    position: relative;
+    min-width: 100%;
+    padding: 0 20px;
+  }
+
+  #section .davichNews .row .davichNewsWrapper a {
+    height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    line-height: 70px;
+    border-top: 1px solid #edeff5;
+  }
+
+  #section .davichNews .row .plusLeft {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    border: 1px solid #222;
+  }
+
+  #section .davichNews .row .plusLeft i {
+    font-size: 16px;
+    padding: 8px;
+    color: gray;
+  }
+
+  #section .davichNews .row .davichNewsOuterRight {
+    position: relative;
+    min-width: 100%;
+    padding: 0 20px;
+  }
+
+  #section .davichNews .row .plusRight {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    border: 1px solid #222;
+  }
+
+  #section .davichNews .row .plusRight i {
+    font-size: 16px;
+    padding: 8px;
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  /* ====================aboutDavich==================== */
+  #section .aboutDavich .row > div {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  /* ====================davichNews==================== */
+  #section .davichNews .row .davichNewsOuterRight .storeSlide .imgText h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  #section .davichNews .row .davichNewsOuterRight .storeSlide .imgText p {
+    font-size: 15px;
+  }
+}
