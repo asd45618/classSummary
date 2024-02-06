@@ -17,17 +17,32 @@ $(".slideInner").slick({
     '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button><p class="next">Next</p>',
 });
 
+$(".imgText").slick({
+  autoplaySpeed: 4000,
+  // speed: 300,
+  autoplay: true,
+  dots: false,
+  arrows: false,
+  infinite: true,
+});
+
 $(".slideOuter .plapau i").on("click", function () {
   let vid = $("#section .slideOuter .slideInner .slide").find("video");
   console.log(vid);
   if ($(this).hasClass("fa-pause")) {
     $(".slideInner").slick("slickPause");
     $(".slideOuter .plapau i").removeClass("fa-pause").addClass("fa-play");
-    vid.get(0).pause();
+    vid.get(1).pause();
+    vid.get(2).pause();
+    vid.get(3).pause();
+    vid.get(4).pause();
   } else {
     $(".slideInner").slick("slickPlay");
     $(".slideOuter .plapau i").removeClass("fa-play").addClass("fa-pause");
-    vid.get(0).play();
+    vid.get(1).play();
+    vid.get(2).play();
+    vid.get(3).play();
+    vid.get(4).play();
   }
 });
 

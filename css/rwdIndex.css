@@ -564,6 +564,27 @@
     padding: 0 20px;
   }
 
+  #section .davichNews .row .davichNewsOuterRight .storeSlide .imgText {
+    position: absolute;
+    max-width: 200px;
+    top: 35%;
+    left: 60%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  #section .davichNews .row .davichNewsOuterRight .storeSlide .imgText h4 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  #section .davichNews .row .davichNewsOuterRight .storeSlide .imgText p {
+    font-size: 18px;
+  }
+
   #section .davichNews .row .plusRight {
     position: absolute;
     top: 19px;
@@ -587,6 +608,17 @@
 
 @media screen and (max-width: 570px) {
   /* ====================davichNews==================== */
+  #section .davichNews .row .davichNewsOuterRight .storeSlide .imgText {
+    position: absolute;
+    max-width: 150px;
+    top: 35%;
+    left: 60%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    overflow: hidden;
+  }
+
   #section .davichNews .row .davichNewsOuterRight .storeSlide .imgText h4 {
     font-size: 20px;
     line-height: 30px;
