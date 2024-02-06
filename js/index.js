@@ -92,3 +92,11 @@ $("#header .row .menuOpen").on("click", function () {
   $("#header .row .menu .depth1").stop().slideToggle(200);
   $(this).find("i").toggleClass("fa-bars fa-times");
 });
+
+$("#footer .row .footerBottom .footerBottomText .familySite").on(
+  "click",
+  function () {
+    $(this).find(".familySiteInner").stop().slideToggle(200);
+    $(this).find("i").toggleClass("fa-chevron-up fa-chevron-down");
+  }
+);

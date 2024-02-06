@@ -867,6 +867,26 @@ video {
   right: 0;
   border: 1px solid #dedede;
   padding: 12px 20px;
+  cursor: pointer;
+}
+
+#footer .row .footerBottom .footerBottomText .familySite .familySiteInner {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dedede;
+  display: none;
+}
+
+#footer .row .footerBottom .footerBottomText .familySite .familySiteInner a {
+  display: block;
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  /* font-weight: 400; */
+  font-size: 16px;
+  padding: 12px 20px;
 }
 
 #footer .row .footerBottom .footerBottomText .familySite .familySiteWrapper {

@@ -423,7 +423,7 @@
   }
 
   #footer .row .footerBottom .footerBottomText .familySite {
-    position: static;
+    position: relative;
     width: 250px;
     top: 0;
     right: 0;
@@ -476,7 +476,7 @@
   }
 
   #footer .row .footerBottom .footerBottomText .familySite {
-    position: static;
+    position: relative;
     width: 150px;
     top: 0;
     right: 0;
@@ -498,6 +498,15 @@
     top: 30%;
     right: 0;
     font-size: 12px;
+  }
+
+  #footer .row .footerBottom .footerBottomText .familySite .familySiteInner a {
+    display: block;
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    /* font-weight: 400; */
+    font-size: 12px;
+    padding: 6px 10px;
   }
 }
 
