@@ -116,7 +116,13 @@
       <div class="slideOuter">
         <div class="slideInner">
           <div class="slide">
-            <video src="./images/slide1.mp4" autoplay muted loop></video>
+            <video
+              class="video1"
+              src="./images/slide1.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
             <div class="row">
               <h2 class="h2Text">신뢰할 수 있는 Healthcare브랜드</h2>
               <p class="subText">당신과 함께하는 우리는 다비치입니다.</p>
@@ -502,58 +508,6 @@
       </div>
     </div>
 
-    <script>
-      $(".slideInner").slick({
-        autoplaySpeed: 4000,
-        // speed: 300,
-        autoplay: true,
-        dots: true,
-        arrows: true,
-        prevArrow:
-          '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa-solid fa-chevron-left"></i></button><p class="prev">Prev</p>',
-        nextArrow:
-          '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button><p class="next">Next</p>',
-      });
-
-      $(".slideOuter .plapau i").on("click", function () {
-        if ($(this).hasClass("fa-pause")) {
-          $(".slideInner").slick("slickPause");
-          $(".slideOuter .plapau i")
-            .removeClass("fa-pause")
-            .addClass("fa-play");
-        } else {
-          $(".slideInner").slick("slickPlay");
-          $(".slideOuter .plapau i")
-            .removeClass("fa-play")
-            .addClass("fa-pause");
-        }
-      });
-
-      let headerNav = document.querySelector("#headerNav");
-      let depth2 = document.querySelectorAll(".depth2");
-      console.log(depth2);
-
-      // function mouseEnterEvent() {
-      //   headerNav.style.display = "block";
-      // }
-
-      // function mouseLeaveEvent() {
-      //   headerNav.style.display = "none";
-      // }
-
-      // function depth2MouseEnterEvent() {
-      //   depth2.forEach((value) => {
-      //     value.style.display = "flex";
-      //     value.style.width = "100%";
-      //   });
-      // }
-
-      // function depth2MouseLeaveEvent() {
-      //   // depth2.forEach((value) => {
-      //   //   value.style.display = "none";
-      //   // });
-      //   depth2.style.display = "none";
-      // }
-    </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

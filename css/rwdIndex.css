@@ -70,11 +70,15 @@
     right: 1%;
   }
 
-  #header .row .menu .depth1 > li:hover {
+  #header .row .menu .depth1 > li {
+    border-bottom: 2px solid rgb(248, 248, 248);
+  }
+
+  #header .row .menu .depth1 > li.on {
     border-color: #fff;
   }
 
-  #header .row .menu .depth1 > li:hover > a {
+  #header .row .menu .depth1 > li.on > a {
     border-color: #0056aa;
   }
 
@@ -97,11 +101,11 @@
     left: 0;
     width: 100%;
     background: #fff;
-    display: block;
+    display: none;
     padding: 0 30px;
   }
 
-  #header .row .depth1 > li:hover .depth2 {
+  #header .row .depth1 > li.on .depth2 {
     display: block;
     width: 100%;
   }
@@ -166,27 +170,36 @@
 
   /* ====================volunteer==================== */
   #section .volunteer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 100%;
+    max-width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Noto Sans KR", sans-serif;
     text-align: center;
+    background: rgba(255, 255, 255, 0.4);
   }
 
   /* ====================lab==================== */
   #section .lab .row {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     position: absolute;
-    width: 1400px;
+    max-width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Noto Sans KR", sans-serif;
+    background: rgba(255, 255, 255, 0.3);
   }
 
   #section .lab .row a {
@@ -197,8 +210,8 @@
     font-size: 17px;
     font-weight: 400;
     text-align: center;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #000;
+    color: #000;
     transition: 0.3s;
     visibility: hidden;
     opacity: 0;

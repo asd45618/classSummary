@@ -79,11 +79,11 @@ video {
   border-bottom: 2px solid transparent;
 }
 
-#header .row .menu .depth1 > li:hover {
+#header .row .menu .depth1 > li.on {
   border-color: #0056aa;
 }
 
-#header .row .menu .depth1 a:hover {
+#header .row .menu .depth1 a.on {
   color: #0056aa;
 }
 
@@ -97,7 +97,7 @@ video {
   border-top: 1px solid #ccc;
 }
 
-#header .row .depth1 > li:hover .depth2 {
+#header .row .depth1 > li.on .depth2 {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -114,6 +114,7 @@ video {
 
 #header .row .menuOpen {
   display: none;
+  cursor: pointer;
 }
 
 #header .row .goToBtn {
@@ -275,11 +276,12 @@ video {
 
 #section .slideOuter .plapau {
   position: absolute;
-  bottom: 29.5%;
+  bottom: 29.6%;
   left: 24%;
   font-size: 20px;
   color: #fff;
   margin-left: 60px;
+  cursor: pointer;
 }
 
 /* ====================davichInfo==================== */
@@ -554,7 +556,7 @@ video {
 }
 
 #section .aboutDavich .row .aboutDavichInner .aboutDavichImg {
-  width: 160px;
+  /* width: 160px; */
   max-width: 100%;
   max-height: 100%;
   margin-bottom: 17px;
