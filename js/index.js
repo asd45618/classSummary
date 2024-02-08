@@ -1,9 +1,31 @@
-let windowWidth = $(window).width();
-if (windowWidth > 1440) {
-  $("html").addClass("pc");
-} else {
-  $("html").addClass("mobile");
+function getWindowWidth() {
+  let windowWidth = $(window).width();
+  if (windowWidth > 1440) {
+    $("html").addClass("pc").removeClass("mobile");
+    $("#header .row .menu").css({
+      display: "block",
+    });
+    $("#header .row .depth1 > li").removeClass("on");
+    $("#header .row .depth1 > li > .depth2").css({
+      display: "none",
+    });
+  } else {
+    $("html").addClass("mobile").removeClass("pc");
+    $("#header .row .menu").css({
+      display: "none",
+    });
+    $("#header .row .menuOpen")
+      .find("i")
+      .addClass("fa-bars")
+      .removeClass("fa-times");
+  }
 }
+
+getWindowWidth();
+
+$(window).on("resize", function () {
+  getWindowWidth();
+});
 
 $(".slideInner").slick({
   autoplaySpeed: 4000,
@@ -74,6 +96,14 @@ let depth2 = document.querySelectorAll(".depth2");
 $("#header .row .depth1 > li").on("mouseover mouseout", function () {
   if ($("html").hasClass("pc")) {
     $(this).toggleClass("on");
+    $(this).siblings().removeClass("on");
+    $(this).find(".depth2").stop().slideToggle();
+    // $(this).find(".depth2").css({
+    //   display: "flex",
+    //   justifyContent: "center",
+    //   width: "100%",
+    //   height: "100%",
+    // });
   }
 });
 
@@ -81,6 +111,8 @@ $("#header .row .depth1 > li").on("click", function () {
   if ($("html").hasClass("mobile")) {
     $(this).toggleClass("on");
     $(this).siblings().removeClass("on");
+    $(this).find(".depth2").stop().slideToggle();
+    $(this).siblings().find(".depth2").stop().slideUp();
   }
 });
 
@@ -89,8 +121,14 @@ $("#header .row .menuOpen").on("click", function () {
   // $("#header .row .menu .depth1").css({
   //   display: depth1Display === "block" ? "none" : "block",
   // });
-  $("#header .row .menu .depth1").stop().slideToggle(200);
-  $(this).find("i").toggleClass("fa-bars fa-times");
+  $("#header .row .menu").stop().slideToggle(200);
+  if (!$(this).find("i").hasClass("fa-bars")) {
+    $("#header .row .depth1 > li").removeClass("on");
+    $("#header .row .depth1 > li > .depth2").slideUp();
+    $(this).find("i").addClass("fa-bars").removeClass("fa-times");
+  } else {
+    $(this).find("i").addClass("fa-times").removeClass("fa-bars");
+  }
 });
 
 $("#footer .row .footerBottom .footerBottomText .familySite").on(

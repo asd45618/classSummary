@@ -51,11 +51,11 @@
   }
 
   #header .row .menu {
-    display: block;
+    display: none;
   }
 
   #header .row .menu .depth1 {
-    display: none;
+    display: block;
   }
 
   #header .row .menuOpen {
@@ -70,9 +70,9 @@
     right: 1%;
   }
 
-  #header .row .menu .depth1 > li {
+  /* #header .row .menu .depth1 > li {
     border-bottom: 2px solid rgb(248, 248, 248);
-  }
+  } */
 
   #header .row .menu .depth1 > li.on {
     border-color: #fff;
@@ -80,6 +80,7 @@
 
   #header .row .menu .depth1 > li.on > a {
     border-color: #0056aa;
+    color: #0056aa;
   }
 
   #header .row .menu .depth1 > li > a {
@@ -92,7 +93,7 @@
     line-height: 22px;
     cursor: pointer;
     position: relative;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid rgb(248, 248, 248);
   }
 
   #header .row .menu .depth1 .depth2 {
@@ -103,12 +104,14 @@
     background: #fff;
     display: none;
     padding: 0 30px;
+    border-top: 1px solid transparent;
+    text-align: left;
   }
 
-  #header .row .depth1 > li.on .depth2 {
+  /* #header .row .depth1 > li.on .depth2 {
     display: block;
     width: 100%;
-  }
+  } */
 
   #header .row .depth2 > li > a {
     display: block;
@@ -253,8 +256,7 @@
 
   #section .insta .row .imgBoxOuter {
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
   }
 
@@ -263,9 +265,8 @@
     overflow: hidden;
     position: relative;
     width: 40%;
-    height: 40%;
+    height: 100%;
     margin: 0 10px 40px 0;
-    /* flex: 0 1 35%; */
   }
 
   /* ====================davichNews==================== */

@@ -59,6 +59,10 @@ video {
   align-items: center;
 }
 
+#header .row .menu {
+  display: block;
+}
+
 #header .row .menu .depth1 {
   display: flex;
 }
@@ -68,7 +72,6 @@ video {
   padding: 28px 20px;
   font-family: Public Sans, sans-serif;
   font-weight: 500;
-  color: #222;
   font-size: 17px;
   line-height: 22px;
   cursor: pointer;
@@ -77,17 +80,15 @@ video {
 
 #header .row .menu .depth1 > li {
   border-bottom: 2px solid transparent;
+  color: #222;
 }
 
 #header .row .menu .depth1 > li.on {
   border-color: #0056aa;
-}
-
-#header .row .menu .depth1 a.on {
   color: #0056aa;
 }
 
-#header .row .menu .depth1 .depth2 {
+#header .row .depth1 > li .depth2 {
   position: absolute;
   top: 100%;
   left: 0;
@@ -95,12 +96,7 @@ video {
   background: #fff;
   display: none;
   border-top: 1px solid #ccc;
-}
-
-#header .row .depth1 > li.on .depth2 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  text-align: center;
 }
 
 #header .row .depth2 > li > a {
@@ -654,12 +650,10 @@ video {
 
 #section .insta .row .imgBoxOuter {
   display: flex;
-  /* flex: 0 0 25%; */
   flex-wrap: wrap;
 }
 
 #section .insta .row .imgBoxInner {
-  display: inline-block;
   overflow: hidden;
   position: relative;
   width: 320px;
