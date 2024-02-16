@@ -6,7 +6,7 @@ function getWindowWidth() {
       display: "block",
     });
     $("#header .row .depth1 > li").removeClass("on");
-    $("#header .row .depth1 > li > .depth2").css({
+    $("#header .row .depth1 > li .depth2").css({
       display: "none",
     });
   } else {
@@ -93,17 +93,20 @@ let depth2 = document.querySelectorAll(".depth2");
 //   depth2.style.display = "none";
 // }
 
-$("#header .row .depth1 > li").on("mouseover mouseout", function () {
+$("#header .row .depth1 > li").on("mouseover", function () {
   if ($("html").hasClass("pc")) {
-    $(this).toggleClass("on");
+    $(this).addClass("on");
     $(this).siblings().removeClass("on");
-    $(this).find(".depth2").stop().slideToggle();
-    // $(this).find(".depth2").css({
-    //   display: "flex",
-    //   justifyContent: "center",
-    //   width: "100%",
-    //   height: "100%",
-    // });
+
+    $(this).find(".depth2").stop().slideDown();
+  }
+});
+
+$("#header .row .depth1 > li").on("mouseout", function () {
+  if ($("html").hasClass("pc")) {
+    $(this).removeClass("on");
+    $(this).siblings().removeClass("on");
+    $(this).find(".depth2").stop().slideUp();
   }
 });
 

@@ -96,7 +96,7 @@
     border-bottom: 2px solid rgb(248, 248, 248);
   }
 
-  #header .row .menu .depth1 .depth2 {
+  #header .row .depth1 > li .depth2 {
     position: static;
     top: 100%;
     left: 0;
